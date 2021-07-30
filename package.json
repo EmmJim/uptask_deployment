@@ -1,0 +1,44 @@
+{
+  "name": "uptasknodejs",
+  "version": "1.0.0",
+  "description": "Proyecto UpTask con Node y MVC",
+  "main": "index.js",
+  "scripts": {
+    "desarrollo": "concurrently \"npm run dev \" \"npm run watch \"",
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js",
+    "watch": "webpack -w --mode development"
+  },
+  "author": "Emmanuel Jimenez",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.2.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.12.0",
+    "html-to-text": "^8.0.0",
+    "juice": "^8.0.0",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^6.6.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.2",
+    "sequelize": "^6.6.2",
+    "shortid": "^2.2.16",
+    "slug": "^5.1.0",
+    "sweetalert2": "^11.0.18"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babel-loader": "^8.2.2",
+    "nodemon": "^2.0.7",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}
